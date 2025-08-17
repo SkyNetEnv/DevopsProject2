@@ -2,18 +2,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: first-pipeline-app
+  name: pandacloud-app
   labels:
-    app: first-pipeline-app
+    app: pandacloud-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: first-pipeline-app
+      app: pandacloud-app
   template:
     metadata:
       labels:
-        app: first-pipeline-app
+        app: pandacloud-app
     spec:
       containers:
       - name: first-pipeline-app-container
